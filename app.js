@@ -17,9 +17,9 @@ app.use(express.static('public'));  // To serve static files
 connectDB(); // Call the connectDB function from your config file
 
 // API Routes
-app.get('/pfolio', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'portfolio.html'));
-});
+// app.get('/pfolio', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'public', 'portfolio.html'));
+// });
 
 app.post('/pfolioPost', async (req, res) => {
     try {
