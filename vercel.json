@@ -2,14 +2,23 @@
     "version": 2,
     "builds": [
         {
-            "src":"./app.js",
-            "use":"@vercel/node"
+            "src": "./app.js",
+            "use": "@vercel/node"
         }
     ],
-    "routes":[
+    "routes": [
         {
-            "src":"/(.*)",
-            "dest":"/"
+            "src": "/pfolio",
+            "dest": "/app.js"
+        },
+        {
+            "src": "/pfolioPost",
+            "methods": ["POST"],
+            "dest": "/app.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/"
         }
     ]
 }
