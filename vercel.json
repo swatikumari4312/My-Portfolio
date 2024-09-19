@@ -8,7 +8,7 @@
     ],
     "routes": [
         {
-            "src": "/pfolio",
+            "src": "/",
             "dest": "/app.js"
         },
         {
